@@ -1,0 +1,3 @@
+characters: 1808034
+words: 190605
+lines: 14974
