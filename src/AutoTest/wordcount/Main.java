@@ -112,7 +112,7 @@ public class Main {
                 vals = str.split("/");
                 studentId = vals[1]; //获取学生的学号
                 GitRepoCloner.createFolder("logs/"+studentId);
-                System.out.println(studentId+"projectPath: "+str);
+                System.out.println(studentId+" projectPath: "+str);
                 WordCountTester wordCountTestr = new WordCountTester(studentId, str, timeLimit);//"./projects/"+studentId);
                 ArrayList<String> res = wordCountTestr.getScore();
                 csvPrinter.printRecord(res);

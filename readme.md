@@ -43,6 +43,12 @@
 ![](screencut1.png)
 ![](screencut2.png)
 
+## 环境配置
+
+Windows10
+Visuo Studio2017
+Jdk1.8
+
 ## 文件说明
     
     
