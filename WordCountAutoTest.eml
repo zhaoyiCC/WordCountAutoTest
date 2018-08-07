@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="org.eclipse.jgit-4.11.0.201803080745-r.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/org.eclipse.jgit-4.11.0.201803080745-r.jar!/"/>
+	</lib>
+	<lib name="slf4j-api-1.5.8.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/slf4j-api-1.5.8.jar!/"/>
+	</lib>
+	<lib name="slf4j-log4j12-1.5.8.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.5.8.jar!/"/>
+	</lib>
+	<lib name="log4j-1.2.14.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/"/>
+	</lib>
+	<lib name="jsch-0.1.31.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jsch-0.1.31.jar!/"/>
+	</lib>
+	<lib name="commons-cli-1.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/commons-cli-1.4.jar!/"/>
+	</lib>
+	<levels>
+		<level name="commons-csv-1.4" value="project"/>
+	</levels>
+</component>

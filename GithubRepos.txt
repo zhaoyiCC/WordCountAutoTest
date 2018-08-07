@@ -1,4 +1,1 @@
-15061183 https://github.com/Slontia/word-count
-16061000 https://github.com/zhaoyi1031/wordcount-sample1
-16061001 https://github.com/zhaoyi1031/wordcount-sample2
-16061002 https://github.com/zhaoyi1031/wordcount-sample3
+6 https://github.com/417739347/PairProject20184 https://github.com/miaozhongfeng/PairProject201812 https://github.com/yuan574954352/WordCount.git

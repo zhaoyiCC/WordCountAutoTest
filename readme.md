@@ -6,7 +6,7 @@
 
 ## 使用流程
 
-1. 执行java -jar test.jar -m clone clone
+1. 执行`java -jar test.jar -m clone`
     来下载作业链接。默认使用的是当前路径下的GithubRepo.txt，如果要指定这个文件，可以加上-g [gitFile]。这个步骤将产生gen.txt, 即每个学生的项目在本地的相对路径。
 2. 打开gen.bat，或者执行gen或gen.bat
     为每个项目编译生成exe
@@ -42,6 +42,7 @@
 
 ![](screencut1.png)
 ![](screencut2.png)
+
 
 ## 环境配置
 

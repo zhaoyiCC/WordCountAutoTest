@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="wordcountautotest">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/new.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

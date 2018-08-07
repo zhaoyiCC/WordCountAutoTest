@@ -1,4 +1,3 @@
-downloads/16061000/wordcount-sample1/WordCount
-downloads/15061183/word-count/WordCount
-downloads/16061001/wordcount-sample2/WordCount
-downloads/16061002/wordcount-sample3/WordCount
+12 !!!Exception:No cpp file under wordcount folder Found!!!
+downloads/4/PairProject2018/4/src/WordCount/WordCount
+downloads/6/PairProject2018/06/wordCount/wordCount

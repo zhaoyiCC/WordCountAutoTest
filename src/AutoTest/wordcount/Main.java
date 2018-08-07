@@ -27,7 +27,6 @@ public class Main {
         grab.setRequired(true);
         options.addOption(grab);
 
-
         Option mode = new Option("g", "grab", true, "文件[blogFile] 对应学号与GitHub仓库的关系，默认是当前目录");
         mode.setRequired(false);
         options.addOption(mode);
@@ -87,7 +86,6 @@ public class Main {
 	public static void main(String[] args){
 		commandParameter(args);
 
-
 		GitRepoHanlder gitRepoHanlder = new GitRepoHanlder();
         if (modeChoice.toLowerCase().equals("clone")) {
             System.out.println("Start Clone");
@@ -97,29 +95,30 @@ public class Main {
         System.out.println("Start Test");
         GitRepoCloner.createFolder("logs");
         try{
-            final String SAMPLE_CSV_FILE = "./scores.csv";
+            final String SAMPLE_CSV_FILE = "./scores.csv"; //创建一个文件用来保存同学们的测试得分
             BufferedWriter writer = Files.newBufferedWriter(Paths.get(SAMPLE_CSV_FILE));
             try(
                     CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
                             .withHeader("ID", "Scores", "Score1", "Time1", "Score2", "Time2", "Score3",
                                     "Time3", "Score4", "Time4", "Score5", "Time5", "Score6", "Time6"));
             ) {
-                BufferedReader bufferedReader = new BufferedReader(new FileReader("gen.txt"));
-                String str, studentId;
-                String[] vals;
-            int cnt = 0;
-            while ((str = bufferedReader.readLine()) != null) {
-                vals = str.split("/");
-                studentId = vals[1]; //获取学生的学号
-                GitRepoCloner.createFolder("logs/"+studentId);
-                System.out.println(studentId+" projectPath: "+str);
-                WordCountTester wordCountTestr = new WordCountTester(studentId, str, timeLimit);//"./projects/"+studentId);
-                ArrayList<String> res = wordCountTestr.getScore();
-                csvPrinter.printRecord(res);
-            }
-                bufferedReader.close();
-                csvPrinter.flush();
-                csvPrinter.close();
+	            BufferedReader bufferedReader = new BufferedReader(new FileReader("gen.txt"));
+	            String str, studentId;
+	            String[] vals;
+	            int cnt = 0;
+	            while ((str = bufferedReader.readLine()) != null) {
+	                vals = str.split("/");
+	                studentId = vals[1]; //获取学生的学号
+	                GitRepoCloner.createFolder("logs/"+studentId);
+	                System.out.println(studentId+" projectPath: "+str);
+	                
+	                WordCountTester wordCountTestr = new WordCountTester(studentId, str, timeLimit); //"./projects/"+studentId);
+	                ArrayList<String> res = wordCountTestr.getScore();
+	                csvPrinter.printRecord(res);
+	            }
+	            bufferedReader.close();
+	            csvPrinter.flush();
+	            csvPrinter.close();
             }
             System.out.println("End Test");
         }catch (Exception e){
