@@ -17,20 +17,20 @@ public class WordCountTester {
 	public static ArrayList<Integer> scores;  //每条命令下该同学的得分情况
 	public static ArrayList<Double> times; //每条命令下该同学的用时情况。如果为负，则为用错误类型
 	private static String[] argumentScoreMaps = new String[]{ //测试参数
-			"-n 100 tests/rural.txt",
-			"-m 5 tests/rural.txt",
-			"-m 3 -n 30 tests/science.txt",
-			"-n 20 -r tests/inaugural",
-			"-m 2 -n 1000 -r tests/inaugural", //gutenberg
-			"-m 2 -n 1000 -r tests/gutenberg", //gutenberg
+			"-i tests/rural.txt -n 100 ",
+			"-i tests/rural.txt -m 5 tests/rural.txt",
+			"-i tests/science.txt -m 3 -n 30",
+			//"-i -n 20 -r tests/inaugural",
+			//"-m 2 -n 1000 -r tests/inaugural", //gutenberg
+			//"-m 2 -n 1000 -r tests/gutenberg", //gutenberg
 		};
 	private static String[] stdResults = new String[]{ //测试用例的参考答案
 			"stds/std1.txt",
 			"stds/std2.txt",
 			"stds/std3.txt",
-			"stds/std4.txt",
-			"stds/std5.txt",
-			"stds/std6.txt",
+			//"stds/std4.txt",
+			//"stds/std5.txt",
+			//"stds/std6.txt",
 	};
 	
 	public WordCountTester(String studentId, String baseDir, int timeLimit){

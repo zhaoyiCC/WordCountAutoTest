@@ -107,7 +107,10 @@ public class Main {
 	            String[] vals;
 	            int cnt = 0;
 	            while ((str = bufferedReader.readLine()) != null) {
-	                vals = str.split("/");
+                    str = str.replaceAll("\\\\","/"); //这个一般是用不着的，防止在Windows里遇到的路径格式
+                    vals = str.split("/");
+
+	                System.out.println(str);
 	                studentId = vals[1]; //获取学生的学号
 	                GitRepoCloner.createFolder("logs/"+studentId);
 	                System.out.println(studentId+" projectPath: "+str);

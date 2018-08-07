@@ -68,9 +68,10 @@ public class GitRepoHanlder {
 				if (!hasFound){
 					System.out.println("!!!Exception:"+"No cpp file under wordcount folder Found!!!");
 					out.write(studentId + " !!!Exception:"+"No cpp file under wordcount folder Found!!!");
-				}else
+				}else {
 					System.out.println(baseDir);
-				out.write(baseDir+"\r\n"); //"downloads/"+studentId+"/"+suffix+"/WordCount\r\n" // \r\n即为换行
+					out.write(baseDir + "\r\n"); //"downloads/"+studentId+"/"+suffix+"/WordCount\r\n" // \r\n即为换行
+				}
 
 				if (status == 0) { //项目不存在
 					System.out.println("项目不存在!");

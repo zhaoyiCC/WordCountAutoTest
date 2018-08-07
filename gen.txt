@@ -1,3 +1,2 @@
-12 !!!Exception:No cpp file under wordcount folder Found!!!
-downloads/4/PairProject2018/4/src/WordCount/WordCount
-downloads/6/PairProject2018/06/wordCount/wordCount
+downloads\100\PairProject2018\1\src\WordCount
+downloads\4\PairProject2018\4\src\WordCount\WordCount

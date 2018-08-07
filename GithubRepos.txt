@@ -1,1 +1,2 @@
-6 https://github.com/417739347/PairProject20184 https://github.com/miaozhongfeng/PairProject201812 https://github.com/yuan574954352/WordCount.git
+4 https://github.com/miaozhongfeng/PairProject2018
+100 https://github.com/RainingQ/PairProject2018
